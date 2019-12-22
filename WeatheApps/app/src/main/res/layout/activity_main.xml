@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+  <TableLayout
+    android:id="@+id/tableLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="202dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <EditText
+        android:id="@+id/City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+      <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your weather"
+        android:textColor="@color/colorPrimary" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click" />
+
+      <Button
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="location" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <CheckBox
+        android:id="@+id/Fahre"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:text="F" />
+
+      <CheckBox
+        android:id="@+id/Cels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C" />
+
+      <CheckBox
+        android:id="@+id/Kelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="K" />
+
+    </TableRow>
+  </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
